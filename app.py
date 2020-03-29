@@ -3,7 +3,6 @@ from time import strftime
 from flask import Flask, render_template, flash, request, jsonify
 from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField, IntegerField
 import joblib
-import numpy as np
 import pandas as pd
 
 
