@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <title>Butų prognozė</title>
+    <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <div class="container"><br>
+        <center>
+            <h2>Jūsų būsto kainos prognozė</h2>
+        </center>
+    </div>
+
+    <div class=container"><br>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-4">
+                <form action="" method="post" role="form">
+                    {{ form.csrf }}
+                    <div class="form-group">
+
+                        <label for="rajonas">Rajonas:</label>
+                        <select id="rajonas" class="form-control" name="rajonas" placeholder="Rajonas">
+                            <option value="Antakalnis">Antakalnis</option>
+                            <option value="Aukštieji Paneriai">Aukštieji Paneriai</option>
+                            <option value="Avižieniai">Avižieniai</option>
+                            <option value="Bajorai">Bajorai</option>
+                            <option value="Balsiai">Balsiai</option>
+                            <option value="Baltupiai">Baltupiai</option>
+                            <option value="Buivydiškių k.">Buivydiškių k.</option>
+                            <option value="Buivydiškės">Buivydiškės</option>
+                            <option value="Bukiškio k.">Bukiškio k.</option>
+                            <option value="Burbiškės">Burbiškės</option>
+                            <option value="Didieji Gulbinai">Didieji Gulbinai</option>
+                            <option value="Dvarčionys">Dvarčionys</option>
+                            <option value="Fabijoniškės">Fabijoniškės</option>
+                            <option value="Filaretai">Filaretai</option>
+                            <option value="Gineitiškės">Gineitiškės</option>
+                            <option value="Grigiškės">Grigiškės</option>
+                            <option value="Jeruzalė">Jeruzalė</option>
+                            <option value="Justiniškės">Justiniškės</option>
+                            <option value="Kalnėnai">Kalnėnai</option>
+                            <option value="Karoliniškės">Karoliniškės</option>
+                            <option value="Klevinės vs.">Klevinės vs.</option>
+                            <option value="Lazdynai">Lazdynai</option>
+                            <option value="Lazdynėliai">Lazdynėliai</option>
+                            <option value="Lentvario m.">Lentvario m.</option>
+                            <option value="Liepkalnis">Liepkalnis</option>
+                            <option value="Markučiai">Markučiai</option>
+                            <option value="Naujamiestis">Naujamiestis</option>
+                            <option value="Naujininkai">Naujininkai</option>
+                            <option value="Naujoji Vilnia">Naujoji Vilnia</option>
+                            <option value="Ožkiniai">Ožkiniai</option>
+                            <option value="Paneriai">Paneriai</option>
+                            <option value="Pavilnys">Pavilnys</option>
+                            <option value="Pašilaičiai">Pašilaičiai</option>
+                            <option value="Pilaitė">Pilaitė</option>
+                            <option value="Rasos">Rasos</option>
+                            <option value="Salininkai">Salininkai</option>
+                            <option value="Santariškės">Santariškės</option>
+                            <option value="Saulėtekis">Saulėtekis</option>
+                            <option value="Senamiestis">Senamiestis</option>
+                            <option value="Tarandė">Tarandė</option>
+                            <option value="Tarandės k.">Tarandės k.</option>
+                            <option value="Trakų Vokė">Trakų Vokė</option>
+                            <option value="Turniškės">Turniškės</option>
+                            <option value="Užupis">Užupis</option>
+                            <option value="Užusieniai">Užusieniai</option>
+                            <option value="Valakampiai">Valakampiai</option>
+                            <option value="Verkiai">Verkiai</option>
+                            <option value="Vilkpėdė">Vilkpėdė</option>
+                            <option value="Viršuliškės">Viršuliškės</option>
+                            <option value="Visoriai">Visoriai</option>
+                            <option value="Zujūnai">Zujūnai</option>
+                            <option value="Šeškinė">Šeškinė</option>
+                            <option value="Šiaurės miestelis">Šiaurės miestelis</option>
+                            <option value="Šnipiškės">Šnipiškės</option>
+                            <option value="Žemieji Paneriai">Žemieji Paneriai</option>
+                            <option value="Žirmūnai">Žirmūnai</option>
+                            <option value="Žvėrynas">Žvėrynas</option>
+                        </select>
+                        <br>
+                        <label for="kambariai">Kambarių skaičius:</label>
+                        <input type="number" class="form-control" id="kambariai" name="kambariai"
+                            placeholder="Kambarių skaičius">
+                        <br>
+                        <label for="plotas">Buto plotas:</label>
+                        <input type="number" class="form-control" id="plotas" name="plotas" placeholder="Buto plotas">
+                        <br>
+                        <label for="aukstas">Buto aukštas:</label>
+                        <input type="number" class="form-control" id="aukstas" name="aukstas"
+                            placeholder="Buto aukštas">
+                        <br>
+                        <label for="aukstu">Iš viso aukštų daugiabutyje:</label>
+                        <input type="number" class="form-control" id="aukstu" name="aukstu"
+                            placeholder="Iš viso aukštų daugiabutyje">
+                        <br>
+                        <label for="vardas">Jūsų vardas:</label>
+                        <input type="text" class="form-control" id="vardas" name="vardas" placeholder="Jūsų vardas">
+                        <br>
+                        <label for="email">Jūsų email:</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Jūsų email">
+                        <br>
+
+                    </div>
+                    <br>
+
+                    <center>
+                        <button type="submit" class="btn btn-success">Paskaičiuojam!</button>
+                    </center>
+                </form>
+
+                <br>
+
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+
+                {% for message in messages %}
+                {% if "Visi laukai yra privalomi!" not in message[1]: %}
+                <div class="alert alert-info">
+                    <strong>Valio! </strong> {{ message[1] }}
+                </div>
+                {% endif %}
+
+                {% if "Visi laukai yra privalomi!" in message[1]: %}
+                <div class="alert alert-danger">
+                    <strong>Klaida: </strong> {{ message[1] }}
+                </div>
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+
+            </div>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>
